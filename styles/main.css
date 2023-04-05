@@ -41,6 +41,7 @@ p {
   width: 75vmin;
   line-height: 3vh;
 }
+
 a {
   padding-right: 30px;
   position: sticky;
@@ -68,6 +69,13 @@ h1 {
   border-radius: 5px;
 } 
 
+.box-model {
+  margin-left: auto;
+}
+
+.difference {
+  margin-right: auto;
+}
 
 
 
