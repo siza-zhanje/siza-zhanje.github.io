@@ -3,74 +3,79 @@
 
 <head>
   <title> CSS Concepts </title>
-  <title>My blog</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="My blog">
   <link rel="stylesheet" href="../styles/main.css">
-
 </head>
 
 <body>
-<header>
-  <h1>Tech Blog - CSS Concepts</h1>
+<header> <!--areas = welcome-->
+  <h1>CSS Concepts</h1>
 </header>
   
-<nav class="nav">
-  <hr class="rounded>">
+<nav class="nav"> <!--nav-->
   <a id="home" href="#">Home</a>
   <a href="../blog/te-houtaewa-template.html" target="_blank">Blog</a>
-  <a id="contact" href="#">Contact Me</a>
+  <a id="contact" href="#">Contact</a>
 </nav>
 
-<aside>
+<aside class="spacing">
   <h3> CSS Concept - Spacing </h3>
 
   <p> Elements on a webpage are separated from each other by spaces called margin and padding. The boundary of an element is called the border. <br>
-    The size of this space determines whether the building block appears smaller or larger in relation to it nearest and/or surrounding building block.
+  The size of this space determines whether the building block appears smaller or larger in relation to it nearest and/or surrounding building block.
   In this blog, I explain the differences, as well how and when they would be used.
   </p>
 
 </aside>
 
-<article id="ccs-concepts">
+<article id="ccs-concepts"> <!--main-->
   
 <section>
-<h3>What is the <strong>difference</strong> between Margin, Border, and Padding?
+<h3>What is the difference between Margin, Border, and Padding?
 </h3>
 
-<img src="../images/diagram-showing-margin-border-padding.png" alt="diagram of depicting how space in an element is achieved as represented by the CSS box model"
-class="box-model">
-
-<div id="difference" >
+<div class="difference">
   <p>
-    <em>Margin</em> is the space around a specific building block or element. I think of it as the space that lies <strong>outside</strong> of the element.
-   </p>
-   
-   <p>
-   Since each element on the page is a defined area, the <em>border</em> is the boundary around an element.
-   </p>
-   
-   <p>
-   Finally, <em>padding</em> is the space between the content inside the element and it&#39;s boundary/edge/border.
-   </p>
+<em>Margin</em> is the space around a specific building block or element. I think of it as the space that lies <strong>outside</strong> of the element.  <br>
+<img src="../images/diagram-showing-margin-border-padding.png" alt="diagram of depicting how space in an element is achieved as represented by the CSS box model"
+class="box-model"><br>
+Since each element on the page is a defined area, the <em>border</em> is the boundary around an element.
+Finally, <em>padding</em> is the space between the content inside the element and it&#39;s boundary/edge/border.
+</p>
 </div>
 
 <section>
-<h3>How are they used?</h3>  
+<h3>How are they used&#63;</h3> 
+
+<div class="difference">
+<p>The following code shows values set for all surrounding space for the navigation element grouping as&#58; 
+  <pre>
+    <code>
+    margin-top: 0.5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.5%;
+  </code>
+</pre>
+<img src="../images/spacing-css-code.png" alt="an image of a screen shot showing values for spacing allocated"> 
+</p> 
 <p>
-When applying a style to a webpage, it is to the individual elements that the sale is being applied. For readability/clarity, each element should be spaced from 
-The other surrounding elements by adding space between them. To add space, a value for each or all of margin, border and padding.
+The above screen shot shows this as applied to the navigation section of the page.
 </p>
+</div>
 </section>
 
 <section>
 
   <h3>When are they used&#63;</h3>
 
+  <div class="difference">
   <p>
     When creating a layout of a web page, each element should be separated from the other elements on the same section
 of the page.
   </p>
+</div>
 </section>
 
 </article>
