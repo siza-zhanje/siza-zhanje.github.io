@@ -10,7 +10,7 @@ display: grid;
 
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: auto;
+  margin: 0;
   padding: auto;
 }
 
@@ -31,7 +31,8 @@ h3 {
 
 nav { 
   grid-area: nav;
-  margin: 30px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 20px;
   position: relative;
 }
