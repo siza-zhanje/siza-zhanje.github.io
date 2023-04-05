@@ -46,6 +46,10 @@ margin-right: auto;
 padding: 2%;
 }
 
+#my-projects {
+  margin: auto;
+}
+
 h3 {
   font-size: 1em;
   line-height: 1.5;
@@ -71,18 +75,30 @@ a {
 
 main { 
   grid-area: main;
+  margin: auto;
+  border-top: 5px solid purple;
 }
 
 footer {
   grid-area: footer; 
+  border-top: 5px solid purple;
 }
 
 h1 {
   font-size: auto;
-  color: black;
+  color: darkorchid;
 }
 
+ol.entries {
+  list-style-position: inside;
+  padding: 0.5%; 
+  margin: auto;
+}
 
+li {
+  margin: 0.5em;
+  padding: 2em;
+}
 img {
   margin-left: auto;
   margin-right: auto;
@@ -109,7 +125,7 @@ Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=Yo
 
 
 .footer {
-  background-color: yellowgreen;
+  background-color:plum;
 }
 
 @media (max-width: 600px) {
