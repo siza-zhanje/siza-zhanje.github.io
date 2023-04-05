@@ -4,10 +4,10 @@ display: grid;
  grid-template-areas: 
  'welcome'
   'nav' 
+  'spacing'
   'main'
   'footer'
 ;
-
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
@@ -22,26 +22,44 @@ header {
   position: relative;
 }
 
+nav { 
+  grid-area: nav;
+  margin-top: 0.5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5%;
+  padding: 20px;
+  position: relative;
+}
+
+aside {
+  grid-area: spacing;
+  margin: auto;
+  padding: 2%;
+  border-top: 5px solid purple;
+}
+
+#ccs-concepts {
+grid-area: main;
+margin-left: auto;
+margin-right: auto;
+padding: 2%;
+}
+
 h3 {
   font-size: 1em;
   line-height: 1.5;
   position: relative;
-  margin-left: 10%;
-}
-
-nav { 
-  grid-area: nav;
-  margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  position: relative;
+  margin-right: auto;
 }
 
 p {
   width: 75vmin;
   line-height: 3vh;
+  margin: 5%;
+  padding: 2%;
 }
-
 a {
   padding-right: 30px;
   position: sticky;
@@ -64,29 +82,32 @@ h1 {
   color: black;
 }
 
-.rounded {
-  border: solid 5px gray;
-  border-radius: 5px;
-} 
 
-.box-model {
+img {
   margin-left: auto;
+  margin-right: auto;
+  border: solid 6px gray;
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: min-content;
 }
 
 .difference {
   margin-right: auto;
 }
 
-
-
+pre code {
+background-color: #eee;
+padding: 20px;
+display: grid;
+border: 1px solid #999;
+max-width: 100%;
+max-height: auto; 
+}
 /*
-.tech-section {
-  border: solid 5px red;
-}
-.core-section {
-  border: solid 5px orange;
-}
-*/
+Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.*/
+
+
 .footer {
   background-color: yellowgreen;
 }
