@@ -2,10 +2,12 @@
 body {
 display: grid;
  grid-template-areas: 
- 'welcome'
-  'nav' 
+    'welcome'
+    'nav' 
+    'main'
+    'aside'
+    'article'
   'spacing'
-  'main'
   'footer'
 ;
   min-height: 100vh;
@@ -64,6 +66,7 @@ p {
   margin: 5%;
   padding: 2%;
 }
+
 a {
   padding-right: 30px;
   position: sticky;
@@ -75,24 +78,23 @@ a {
 
 main { 
   grid-area: main;
+  /*display: grid; TODO*/
   margin: auto;
   border-top: 5px solid purple;
 }
 
-footer {
-  grid-area: footer; 
-  border-top: 5px solid purple;
-}
+
 
 h1 {
   font-size: auto;
   color: darkorchid;
 }
 
-ol.entries {
+ul.entries {
   list-style-position: inside;
   padding: 0.5%; 
   margin: auto;
+  word-break: break-all;
 }
 
 li {
@@ -112,6 +114,28 @@ img {
   margin-right: auto;
 }
 
+.blog-main {
+  display: grid;
+  grid-template-areas: 
+  "article article";
+  margin: 30px auto;
+  border-top: 5px solid purple;
+}
+
+#tech-blog  {
+  max-width: fit-content;
+}
+.blog {
+  display: grid;
+  background-color: #FFD6FF;
+  padding: 30px;
+  margin: 50px;
+}
+
+ h4 {
+    font-size: medium;
+  }
+
 pre code {
 background-color: #eee;
 padding: 20px;
@@ -126,6 +150,10 @@ Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=Yo
 
 .footer {
   background-color:plum;
+  grid-area: footer;
+  display: grid;
+  /* grid-template-areas: "footer footer"; TODO*/
+  border-top: 5px solid purple;
 }
 
 @media (max-width: 600px) {
@@ -141,6 +169,8 @@ Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=Yo
 }
 
 
+    
+  
 
 
 
