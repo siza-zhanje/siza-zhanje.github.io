@@ -41,7 +41,7 @@ aside {
   border-top: 5px solid purple;
 }
 
-#ccs-concepts, #identity-values {
+#ccs-concepts {
 grid-area: main;
 margin-left: auto;
 margin-right: auto;
