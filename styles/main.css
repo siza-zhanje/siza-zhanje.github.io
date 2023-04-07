@@ -35,7 +35,7 @@ nav {
 }
 
 aside {
-  grid-area: spacing; /*aside*/
+  grid-area: spacing;
   margin: auto;
   padding: 2%;
   border-top: 5px solid purple;
