@@ -35,13 +35,13 @@ nav {
 }
 
 aside {
-  grid-area: spacing;
+  grid-area: spacing; /*aside*/
   margin: auto;
   padding: 2%;
   border-top: 5px solid purple;
 }
 
-#ccs-concepts {
+#ccs-concepts, #identity-values {
 grid-area: main;
 margin-left: auto;
 margin-right: auto;

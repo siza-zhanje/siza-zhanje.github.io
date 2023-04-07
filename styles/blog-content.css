@@ -2,12 +2,12 @@
 body {
   display: grid;
    grid-template-areas: 
-   'welcome' 'welcome'
-    'nav' 'nav' 
-    'main' 'main'
-    'aside' 'aside'
-    'article' 'article'
-    'footer' 'footer'
+   'welcome'
+    'nav' 
+    'main'
+    'aside'
+    'article'
+    'footer'
   ;
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -67,6 +67,7 @@ body {
     margin: 5%;
     padding: 2%;
   }
+
   a {
     padding-right: 30px;
     position: sticky;
@@ -119,11 +120,9 @@ body {
   }
   
 .blog-main {
-  grid-area: main;
   display: grid;
   grid-template-areas: 
-  "article article"
-  ;
+  "article article";
   margin: 30px auto;
   border-top: 5px solid purple;
 }
@@ -134,7 +133,6 @@ body {
 .blog {
   display: grid;
   background-color: #FFD6FF;
-
   padding: 30px;
   margin: 50px;
 }
@@ -150,9 +148,7 @@ body {
   /*
   Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.*/
   
-  h4 {
-    font-size: medium;
-  }
+ 
   .footer {
     background-color:plum;
   }
@@ -169,17 +165,13 @@ body {
     'footer'
       */
       grid-template-areas: 
-        'welcome' 'welcome'
-        'nav' 'main'
-        'nav' 'aside'
-        'nav' 'article'
-        'nav' 'footer'
+      'welcome' 'welcome'
+      'nav' 'main'
+      'nav' 'footer'
       ;
     }
   }
 
-  @media (min-width: 600px){
-    
   }
   
   
