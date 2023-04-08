@@ -34,12 +34,6 @@ nav {
   position: relative;
 }
 
-/*#ccs-concepts {
-grid-area: main;
-margin-left: auto;
-margin-right: auto;
-padding: 2%;
-}*/
  .blog-content{
   display: grid;
   grid-area: article;
@@ -159,8 +153,6 @@ border: 1px solid #999;
 max-width: 50%;
 max-height: auto; 
 }
-/*
-Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.*/
 
 .question .answer {
   margin: 0;
@@ -199,7 +191,9 @@ Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=Yo
     
   
 
-
+/*
+Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.
+*/
 
   /* Ref. template areas
   https://www.youtube.com/watch?v=KOvGeFUHAC0&t=102s */
