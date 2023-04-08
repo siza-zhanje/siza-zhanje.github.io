@@ -175,7 +175,7 @@ max-height: auto;
   border-top: 5px solid purple;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body {
     /*grid-template-columns: 8em 1fr;
     grid-template-rows: auto 1fr auto; */
@@ -184,6 +184,9 @@ max-height: auto;
       'nav' 'main'
       'nav' 'footer'
     ;
+    /* display: block; TODO -->
+    background-color:yellowgreen;
+   
   }
 }
 
