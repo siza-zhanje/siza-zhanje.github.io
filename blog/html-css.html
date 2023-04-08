@@ -3,6 +3,7 @@
 
 <head>
   <title> CSS Concepts </title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="My blog">
   <link rel="stylesheet" href="../styles/main.css" type="text/css">
@@ -15,11 +16,15 @@
   
 <nav class="nav"> <!--nav-->
   <a id="home" href="../index.html">Home</a>
-  <a href="#">Blog</a>
+  <a href="./blogs-list-page.html">Blog</a>
   <a id="te-houtaewa" href="./te-houtaewa-template.html" target="_blank">te-houtaewa</a>
 </nav>
 
-<aside class="spacing">
+<main class="main">
+
+<article id="ccs-concepts" class="blog-content"> 
+  
+  <aside class="topic-aside">
   <h3> CSS Concept - Spacing </h3>
 
   <p> Elements on a webpage are separated from each other by spaces called margin and padding. The boundary of an element is called the border. <br>
@@ -28,8 +33,6 @@
   </p>
 
 </aside>
-
-<article id="ccs-concepts"> <!--main-->
   
 <section>
 <h3>What is the difference between Margin, Border, and Padding?
@@ -45,7 +48,6 @@ Finally, <em>padding</em> is the space between the content inside the element an
 </p>
 </div>
 
-<section>
 <h3>How are they used&#63;</h3> 
 
 <div class="difference">
@@ -64,11 +66,8 @@ Finally, <em>padding</em> is the space between the content inside the element an
 The above screen shot shows this as applied to the navigation section of the page.
 </p>
 </div>
-</section>
 
-<section>
-
-  <h3>When are they used&#63;</h3>
+<h3>When are they used&#63;</h3>
 
   <div class="difference">
   <p>
@@ -76,14 +75,16 @@ The above screen shot shows this as applied to the navigation section of the pag
 of the page.
   </p>
 </div>
-</section>
+<!--</section>-->
 </article>
+</main>
 
 <footer class="footer">
   <p>Written by: Siza Zhanje</p>
 <address>
 </address>
 </footer>
+
 </body>
 
 </html>
