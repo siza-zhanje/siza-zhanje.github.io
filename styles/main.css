@@ -45,7 +45,6 @@ padding: 2%;
   grid-area: article;
   grid-template-areas: 
   "section aside"
-
   ;
 margin-left: auto;
 margin-right: auto;
@@ -55,17 +54,13 @@ padding: 20px;
 
 .topic-aside {
   grid-area: aside;
-  margin-left: auto;
-  padding: 10px;
-  border-style: inset;
-  border: 1px solid darkgoldenrod;
+  margin-left: 97px;
 }
 
 .difference {
   grid-area: section;
   margin-right: auto;
 }
-
 
 #my-projects {
   margin: auto;
@@ -78,6 +73,9 @@ h3 {
   margin: 20px auto 20px auto;
 }
 
+h2 p {
+  background-color: aquamarine;
+}
 p {
   width: 75vmin;
   line-height: 1.8;
@@ -130,8 +128,6 @@ img {
   max-height: auto;
 }
 
-
-
 .blog-main {
   display: grid;
   grid-template-areas: 
@@ -166,6 +162,18 @@ max-height: auto;
 /*
 Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.*/
 
+.question .answer {
+  margin: 0;
+  padding: 0;
+}
+.question h3 {
+  background-color: lightgray;
+  margin-right: 10px;
+}
+.answer p {
+  margin-left: 40px;
+  padding: 20px;
+}
 
 .footer {
   background-color:plum;
