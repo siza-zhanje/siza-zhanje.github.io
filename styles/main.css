@@ -1,4 +1,29 @@
+/*@media (max-width: 400px) and (orientation: potrait) {
+  body {
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas: 
+      'welcome' 'welcome'
+      'nav' 'main'
+      'nav' 'main'
+      'nav' 'footer'
+    ;
+    display: grid;
+    background-color:yellowgreen;
+  }
+}
+*/
+
 @media (max-width: 320px) {
+  body {
+    grid-template-areas:
+      'welcome' 'welcome'
+      'nav' 'main'
+      'nav' 'main'
+      'nav' 'footer';
+    display: grid;
+  }
+
   header > h1 {
     margin: 30px 6px;
     font-size: 1.6em;
@@ -23,13 +48,48 @@
   }
 
   main {
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-main {
+    display: block;
+    /* grid-template-areas: "article article"; */
+    margin-left: -19%;
+    margin-right: -90%;
+    padding: 1%;
+  }
+
+  #tech-blog,
+  #core-blog {
+    max-width: 42%;
+    border: 2px solid darkorchid;
+    border-radius: 2%;
+  }
+
+  .entries {
+    margin: 0.5rem;
+    padding: 1%;
+    word-break: break-all;
+  }
+
+  li {
+    font-size: 0.5%;
   }
 }
 
 @media (min-width: 321px) and (max-width: 421px) {
+  body {
+    grid-template-areas:
+      'welcome' 'welcome'
+      'nav' 'main'
+      'nav' 'main'
+      'nav' 'footer';
+    display: grid;
+  }
+
   header {
+    grid-area: welcome;
     margin: auto;
     font-size: 13m;
   }
@@ -50,7 +110,6 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 4.5%;
-    
   }
 
   nav > a {
@@ -65,28 +124,26 @@
   main {
     margin-left: auto;
     margin-right: auto;
-   }
+  }
 }
 
-
 body {
-display: grid;
- grid-template-areas: 
+  display: grid;
+  grid-template-areas:
     'welcome'
-    'nav' 
+    'nav'
     'main'
     'aside'
     'article'
-  'spacing'
-  'footer'
-;
+    'spacing'
+    'footer';
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: auto;
 }
 
-header { 
+header {
   grid-area: welcome;
   margin: auto;
   padding: inherit;
@@ -94,7 +151,7 @@ header {
   position: relative;
 }
 
-nav { 
+nav {
   grid-area: nav;
   margin-top: 0.5%;
   margin-right: auto;
@@ -104,16 +161,14 @@ nav {
   /* position: relative; */
 }
 
- .blog-content{
+.blog-content {
   display: grid;
   grid-area: article;
-  grid-template-areas: 
-  "section aside"
-  ;
-margin-left: auto;
-margin-right: auto;
-margin: 13px;
-padding: 20px;
+  grid-template-areas: 'section aside';
+  margin-left: auto;
+  margin-right: auto;
+  margin: 13px;
+  padding: 20px;
 }
 
 .topic-aside {
@@ -129,7 +184,6 @@ padding: 20px;
 #my-projects {
   margin: auto;
 }
-
 
 h3 {
   font-size: 1em;
@@ -161,7 +215,7 @@ a {
   margin-inline: 0.12em;
 }
 
-main { 
+main {
   grid-area: main;
   display: grid;
   margin: auto;
@@ -200,34 +254,34 @@ img {
 
 .blog-main {
   display: grid;
-  grid-template-areas: 
-  "article article";
+  grid-template-areas: 'article article';
   margin: 30px auto;
 }
 
-#tech-blog, #core-blog  {
+#tech-blog,
+#core-blog {
   max-width: fit-content;
   border: 2px solid darkorchid;
   border-radius: 2%;
 }
 .blog {
   /*display: grid;*/
-  background-color: #FFD6FF;
+  background-color: #ffd6ff;
   padding: 30px;
   margin: 50px;
 }
 
 h4 {
-  font-size: medium  
+  font-size: medium;
 }
 
 pre code {
-background-color: #eee;
-padding: 20px;
-display: grid;
-border: 1px solid #999;
-max-width: 50%;
-max-height: auto; 
+  background-color: #eee;
+  padding: 20px;
+  display: grid;
+  border: 1px solid #999;
+  max-width: 50%;
+  max-height: auto;
 }
 
 .question .answer {
@@ -244,33 +298,19 @@ max-height: auto;
 }
 
 .footer {
-  background-color:plum;
+  background-color: plum;
   grid-area: footer;
   display: grid;
   /* grid-template-areas: "footer footer"; TODO*/
   border-top: 5px solid purple;
 }
 
-@media (max-width: 400px) and (orientation: potrait) {
-  body {
-    /*grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto; */
-    grid-template-areas: 
-      'welcome' 'welcome'
-      'nav' 'main'
-      'nav' 'main'
-      'nav' 'footer'
-    ;
-    display: grid;
-    background-color:yellowgreen;
-  }
-
-  .topic-aside {
-    display: block;
-    background-color:yellow;
+.topic-aside {
+  display: block;
+  background-color: yellow;
 }
 
-@media (orientation: landscape)
+/* @media (orientation: landscape)
 {
   body {
     
@@ -282,11 +322,7 @@ max-height: auto;
   ;
   display: grid;
   }
-}
-
-
-    
-  
+} */
 
 /*
 Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.
