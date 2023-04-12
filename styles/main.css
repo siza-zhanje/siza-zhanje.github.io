@@ -4,7 +4,15 @@
     font-size: 1.6em;
     display: flex;
     padding: 6px;
+  }
 
+  header > h3 {
+    font-size: 80%;
+    line-height: 3em;
+    margin: 15px 29px;
+    padding-right: 30px;
+    background-color: lavender;
+    max-width: 77%;
   }
   nav {
     grid-area: nav;
@@ -13,6 +21,13 @@
     padding: 6px;
     font-size: 2%;
   }
+
+  main {
+   margin-left: auto;
+   margin-right: auto;
+
+  }
+
 }
 
 body {
@@ -112,6 +127,11 @@ main {
   margin: auto;
   padding: 30px;
   border-top: 5px solid purple;
+}
+
+.challenge {
+  color: darkorchid;
+  font-weight: 900;
 }
 
 h1 {
