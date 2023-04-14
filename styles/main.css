@@ -1,33 +1,19 @@
-/*@media (max-width: 400px) and (orientation: potrait) {
-  body {
-    /*grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto; 
-    grid-template-areas: 
-      'welcome' 'welcome'
-      'nav' 'main'
-      'nav' 'main'
-      'nav' 'footer'
-    ;
+@media (min-width: 320px) {
+  html body {
+    overflow-x: hidden;
     display: grid;
-    background-color:yellowgreen;
-  }
-}
-*/
 
-@media (max-width: 320px) {
-  body {
-    grid-template-areas:
-      'welcome' 'welcome'
-      'nav' 'main'
-      'nav' 'main'
-      'nav' 'footer';
-    display: grid;
+    max-width: 100%;
+    min-height: auto;
+    align-content: space-around;
   }
 
   header > h1 {
-    margin: 30px 6px;
+    grid-column: span 2;
+    grid-row: 1;
+    margin: 25px 6px;
     font-size: 1.6em;
-    display: flex;
+    /* display: inline-grid; */
     padding: 6px;
   }
 
@@ -41,21 +27,33 @@
   }
   nav {
     grid-area: nav;
-    display: flex;
-    margin: 3.5% -18% 10.5% -2%;
-    padding: 6px;
-    font-size: 2%;
-  }
-
-  main > body {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
-  main .blog-main {
-    display: block;
-    /* grid-template-areas: "article article"; */
-    margin-left: -19%;
+  nav a {
+    padding-right: 20px;
+    font-size: 100%;
+  }
+
+  /*main > body {*/
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  main .topic-aside h3 {
+    
+  }
+  
+
+main > .blog-main { 
+    display: grid;
+    grid-template-areas: 'article';
+    margin-left: -20%;
     margin-right: -90%;
     padding: 1%;
   }
@@ -77,7 +75,7 @@
     font-size: 0.5%;
   }
 }
-
+/*
 @media (min-width: 321px) and (max-width: 421px) {
   body {
     grid-template-areas:
@@ -121,12 +119,7 @@
     display: flex;
   }
 
-  main {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
+  */
 body {
   display: grid;
   grid-template-areas:
@@ -140,7 +133,7 @@ body {
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
-  padding: auto;
+  padding: 0;
 }
 
 header {
@@ -148,19 +141,19 @@ header {
   margin: auto;
   padding: inherit;
   font-size: 1em;
-  position: relative;
+  /* position: relative; */
 }
 
 nav {
   grid-area: nav;
-  margin-top: 0.5%;
+  /* margin-top: 0.5%; */
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0.5%;
-  padding: 20px;
+  /* padding: 20px; */
   /* position: relative; */
 }
-
+/*
 .blog-content {
   display: grid;
   grid-area: article;
@@ -207,7 +200,7 @@ a {
   position: sticky;
   top: 20px;
   padding-right: 20px;
-  margin: /*-0.5em*/ 5vmin;
+  margin: 5vmin;
   font-size: medium;
 }
 
@@ -218,8 +211,7 @@ a {
 main {
   grid-area: main;
   display: grid;
-  margin: auto;
-  padding: 30px;
+  padding: 29px;
   border-top: 5px solid purple;
 }
 
@@ -234,15 +226,13 @@ h1 {
 }
 
 .entries {
-  /*list-style-position: inside;
-  padding: 0.5%; */
-  margin: -18px;
+  margin: -32px;
   word-break: break-all;
 }
 
 li {
   margin: 32px;
-  /*padding: 2em;*/
+
 }
 img {
   margin: 40px auto 40px auto;
@@ -254,7 +244,7 @@ img {
 
 .blog-main {
   display: grid;
-  grid-template-areas: 'article article';
+  grid-template-areas: 'article';
   margin: 30px auto;
 }
 
@@ -265,7 +255,6 @@ img {
   border-radius: 2%;
 }
 .blog {
-  /*display: grid;*/
   background-color: #ffd6ff;
   padding: 30px;
   margin: 50px;
@@ -296,21 +285,21 @@ pre code {
   margin-left: 40px;
   padding: 20px;
 }
-
+*/
 .footer {
   background-color: plum;
   grid-area: footer;
   display: grid;
-  /* grid-template-areas: "footer footer"; TODO*/
   border-top: 5px solid purple;
 }
-
+/*
 .topic-aside {
   display: block;
   background-color: yellow;
 }
 
-/* @media (orientation: landscape)
+
+@media (orientation: landscape)
 {
   body {
     
@@ -322,9 +311,8 @@ pre code {
   ;
   display: grid;
   }
-} */
+} 
 
-/*
 Ref: http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html#:~:text=You%20can%20include%20code%20examples,code%20as%20what%20it%20is.
  Ref. template areas
   https://www.youtube.com/watch?v=KOvGeFUHAC0&t=102s 
