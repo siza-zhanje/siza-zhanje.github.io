@@ -38,19 +38,36 @@
 
   /*main > body {*/
   main {
+    display: grid;
+    grid-area: main;
     margin-left: 20px;
     margin-right: 20px;
     display: grid;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  main .topic-aside h3 {
-    
-  }
-  
 
-main > .blog-main { 
+  main .topic-aside {
+    background-color: lavender;
+    max-width: 70%;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 2em;
+    margin: 50px;
+  }
+
+  main .topic-aside h3 {
+    color: orange;
+    font-weight: bolder;
+  }
+
+  main .blog-content {
+    margin: 1px;
+    max-width: 90%;
+    padding: 2%;
+    line-height: 2em;
+  }
+  main > .blog-main {
     display: grid;
     grid-template-areas: 'article';
     margin-left: -20%;
