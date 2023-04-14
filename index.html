@@ -9,7 +9,7 @@
     <meta name="description" content="My blog">
     
     <!-- style sheets-->
-    <link rel="stylesheet" href="./styles/main.css" type="text/css">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css">
   
     <!--scripts for IE-->
  
@@ -18,8 +18,7 @@
   <body >
     <header>
     <h1>SiZha Blog</h1> 
-    <h3> A journey to Software Development </h3>
-  </header>
+    </header>
 
     <nav class="nav">
       <a id="home" href="#">Home</a>
@@ -27,7 +26,10 @@
       <a id="contact" href="./blog/te-houtaewa-template.html" target="_blank">te-houtaewa</a>
     </nav>
   
-    <main class="main"> <!--TODO change to class=blog-content -->
+    <main class="main"> 
+        
+    <aside class="topic-aside">
+    <h3>A journey to Software Development</h3><!--TODO change to class=blog-content -->
     <!--move blog-list-page to here as before -->
 
         <p>Software development has been a start-stop-start-stop journey, to the point where I took a <em><q class="challenge">Year-of-Challenge</q></em> in 2022 to answer the question:
@@ -38,52 +40,48 @@
         <p>
            The answer is the reason I am now attending Dev Academy.
         </p>
-    <p> Whilst at DevAcademy I have learnt a lot. I want to share some of my <a href="./blog/blogs-list-page.html" id="page-link-blogs" class="challenge"> projects</a>.
+    <p> Whilst at DevAcademy I have learnt a lot. I want to share some of my <a href="#blog" id="blog-links" class="challenge"> work</a> below.
     </p>
+
+    </aside>
   
-      </div>
+  <article id="intro" class="blog-content"> 
 
-      <!-- <section id="my-projects">
-<p> Whilst at DevAcademy I have learnt a lot. I want to share some of my <a href="#my-projects"> projects</a>.
-    </p>
-        <h3>Projects</h3>
-
-        <h4>Tech blogs entries</h4>
-        <article class="tech-blog">
-
+    <article class="blog" id="tech-blog">
+          <h3>Tech</h3>
           <ul class="entries">
             <li>
-              <a href="./blog/html-css.html#css-concepts">CSS Concepts</a>
+              <a href="./html-css.html">CSS Concepts</a>
             </li>
             <li>
-              <a href="#">Tech blog 2</a>
+              <a href="#">JS Fundamentals</a>
             </li>
             <li>
               <a href="#">Tech blog 3</a>
             </li>
           </ul>
         </article>
-      
-        <h4>Core blogs entries</h4>
-        
-        <article class="core-article">
+        <article class="blog" id="core-blog">
+          <h3>Core</h3>
 
-        <ul class="entries">
-          <li>
-            <a href="./blog/identity-values.html">Identity, Values and Strengths</a>
+          <ul class="entries">
+            <li>
+              <a href="./identity-values.html">Identity Values &#38; Strengths</a>
             </li>
-          <li>
-            <a href="#">Core 2</a>
-          </li>
-          <li>
-            <a href="#">Core 3</a>
-          </li>
-        </ul>
-      </article>
+            <li>
+              <a href="./learning-plan.html">Learning Plan</a>
+            </li>
+            <li>
+              <a href="#">Cultural Blog</a>
+            </li>
+            <li>
+              <a href="#">Emotional Intelligence</a>
+            </li>
+          </ul>
+        </article>
 
-    </section> -->
-
-    </main>
+    </article>
+   </main>
 
     <footer class="footer">
       <p>Written by: Siza Zhanje</p>
