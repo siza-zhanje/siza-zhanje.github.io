@@ -49,11 +49,8 @@
 
   main .topic-aside {
     background-color: lavender;
-    max-width: 70%;
-    margin-left: 30px;
-    margin-right: 30px;
     line-height: 2em;
-    margin: 50px;
+    margin: 51px auto;
   }
 
   main .topic-aside h3 {
@@ -63,10 +60,15 @@
 
   main .blog-content {
     margin: 1px;
-    max-width: 90%;
+    max-width: 100%;
     padding: 2%;
     line-height: 2em;
   }
+
+  main .screen-shot {
+    max-width: 100%;
+  }
+
   main > .blog-main {
     display: grid;
     grid-template-areas: 'article';
