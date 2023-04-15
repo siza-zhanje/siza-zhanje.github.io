@@ -89,7 +89,6 @@
             computer reads the lines, also called statements, from
             left-to-right; top-to-bottom.
           </p>
-
           <p>
             Loops represent decisions within control flow. A loop is just that:
             it has a starting point and and ending point. In between the start
@@ -101,8 +100,44 @@
             alt="a screen shot showing the flow of control in making a cup of tea"
             class="screen-shot"
           />
-
           <p>The above could be a set of instructions to make a cup of tea.</p>
+        </div>
+
+        <h3>What is the DOM&#63;</h3>
+
+        <div class="difference">
+          <p>
+            Is a tree-like representation of all the objects that make up the
+            structure and content of a web page. Each element is refereed to as
+            a node and has only one parent. The DOM provides a way of
+            interconnecting with these elements.
+          </p>
+
+          <img
+            src="/images/DOM.png"
+            alt="a screen shot showing the tree-like structure of the DOM"
+            class="screen-shot"
+          />
+          <h4>How does it relate to CSS and HTML</h4>
+          <p>
+            By providing each HTML element with a unique ID, the DOM can be used
+            to modify HTML and CSS elements directly within the browser using
+            Google DevTools. CSS styles HTML elements using its class name;
+            JavaScript uses its ID and the DOM uses both to modify both.
+          </p>
+          <p>
+            Any changes made to the page inside the DOM are not permanent, being
+            lost when the webpage is refreshed. This is useful if we want to
+            test the effect of modifications to the page. Fortunately, if we
+            like those changes, we can still save them by mapping the source
+            files within the DOM back to the local folder.
+          </p>
+
+          <img
+            src="/images/DOM-within-DevTools.png"
+            alt="a screen shot showing the DOM of my blog homepage within DevTools"
+            class="screen-shot"
+          />
         </div>
 
         <h3>Difference between accessing data from arrays and objects</h3>
@@ -112,15 +147,40 @@
             To get an item out of an array, the position of the item is used.
           </p>
 
-          <p>To get an item out of an array, the dot notation is used.</p>
+          <img
+            src="/images/accessing-data-from-array.png"
+            alt="a screen shot showing how data is accessed from an object"
+            class="screen-shot"
+          />
+
+          <p>To get an item out of an object, the dot notation is used.</p>
           <img
             src="/images/dot-notation-object-example.png"
             alt="a screen shot showing how data is accessed from an object"
             class="screen-shot"
           />
+
           <img
             src="/images/data-from-object.png"
-            alt="a screen shot showing data accessed from an object"
+            alt="a screen shot showing how data accessed from an object is presented"
+            class="screen-shot"
+          />
+        </div>
+
+        <h3>Functions and why they are useful</h3>
+
+        <div class="difference">
+          <p>
+            Functions are blocks of instructions which the computer must execute
+            in the order that they are written, from top to bottom. They have a
+            signature which consists of a name, whether or not data needs to be
+            entered for the function to work and whether or not dat must be
+            given back after the instruction block has been completed.
+          </p>
+
+          <img
+            src="/images/why-functions-are-useful.png"
+            alt="a screen shot showing a function and how it can be helpful"
             class="screen-shot"
           />
         </div>
