@@ -31,7 +31,8 @@
     grid-row: 1;
     margin: 25px 6px;
     font-size: 1.6em;
-    /* display: inline-grid; */
+    background-color: plum;
+    color: darkmagenta;
     padding: 6px;
   }
 
