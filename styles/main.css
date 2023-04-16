@@ -6,6 +6,42 @@
     min-height: auto;
     align-content: space-around;
     font-size: 1em;
+
+    grid-template-areas:
+      'welcome'
+      'nav'
+      'main'
+      'aside'
+      'article'
+      'spacing'
+      'footer';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*header {
+      grid-area: welcome;
+      *margin: auto;
+      padding: inherit;
+      font-size: 1em;
+      * position: relative; *
+    }*/
+  }
+  /*nav {
+      * grid-area: nav; *
+      * margin-top: 0.5%; *
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0.5%;
+      * padding: 20px; *
+      * position: relative; *
+    }*/
+
+  .footer {
+    background-color: plum;
+    grid-area: footer;
+    /* display: grid; */
+    border-top: 5px solid purple;
   }
 
   header > h1 {
@@ -70,6 +106,7 @@
 
   main .screen-shot {
     max-width: 100%;
+    height: auto;
   }
 
   main .blog {
@@ -88,6 +125,31 @@
     font-size: 100%;
     padding-bottom: 40px;
   }
+
+  h4 {
+    font-size: medium;
+  }
+  
+  .question .answer {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .question h3 {
+    background-color: lavender;
+    margin-right: 10px;
+  }
+  
+  .answer p {
+    margin-left: 40px;
+    padding: 20px;
+  }
+
+  .challenge {
+  color: darkorchid;
+  font-weight: 900;
+}
+  
 }
 
 @media (min-width: 768px) {
@@ -119,8 +181,8 @@
     font-size: 2em;
   }
 }
-
 /*
+
 @media (min-width: 321px) and (max-width: 421px) {
   body {
     grid-template-areas:
@@ -165,7 +227,7 @@
   }
 
   */
-body {
+/*body {
   display: grid;
   grid-template-areas:
     'welcome'
@@ -185,25 +247,25 @@ header {
   margin: auto;
   padding: inherit;
   font-size: 1em;
-  /* position: relative; */
+  * position: relative; *
 }
 
 nav {
-  /* grid-area: nav; */
-  /* margin-top: 0.5%; */
+  * grid-area: nav; *
+  * margin-top: 0.5%; *
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0.5%;
-  /* padding: 20px; */
-  /* position: relative; */
+  * padding: 20px; *
+  * position: relative; *
 }
 
 .footer {
   background-color: plum;
   grid-area: footer;
-  /* display: grid; */
+  * display: grid; *
   border-top: 5px solid purple;
-}
+} */
 
 /*
 .blog-content {
@@ -315,6 +377,18 @@ img {
 h4 {
   font-size: medium;
 }
+.question .answer {
+  margin: 0;
+  padding: 0;
+}
+.question h3 {
+  background-color: lightgray;
+  margin-right: 10px;
+}
+.answer p {
+  margin-left: 40px;
+  padding: 20px;
+}
 
 pre code {
   background-color: #eee;
@@ -337,9 +411,7 @@ pre code {
   margin-left: 40px;
   padding: 20px;
 }
-*/
 
-/*
 .topic-aside {
   display: block;
   background-color: yellow;
