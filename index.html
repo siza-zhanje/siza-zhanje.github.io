@@ -1,91 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <title>My blog</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My blog">
-    
+    <title>SiZha Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My blog" />
+
     <!-- style sheets-->
-    <link rel="stylesheet" href="./styles/main.css" type="text/css">
-  
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+
     <!--scripts for IE-->
- 
   </head>
 
-  <body >
+  <body>
     <header>
-    <h1>Welcome to My Blog</h1> 
-    <h3> Where I share part of my journey to Software Development </h3>
-  </header>
+      <h1>SiZha Blog</h1>
+    </header>
 
     <nav class="nav">
       <a id="home" href="#">Home</a>
-      <a href="./blog/blogs-list-page.html" target="_blank">Blog</a> 
-      <a id="contact" href="./blog/te-houtaewa-template.html" target="_blank">te-houtaewa</a>
+      <a href="#intro" target="_blank">Blog</a>
+      <a id="contact" href="blog/te-houtaewa-template.html" target="_blank"
+        >te-houtaewa</a
+      >
     </nav>
-  
+
     <main class="main">
-    <!--<h3>Introduction</h3>-->
+      <aside class="topic-aside">
+        <h3>A journey to Software Development</h3>
 
-        <p>Software development has been a start-stop-start-stop journey, to the point where I took a <em><q>Year-of-Challenge</q></em> in 2022 to answer the question: 
-           If I was not writing code, what would I be doing? The answer is the reason I am now attending Dev Academy.
+        <p>
+          Software development has been a start-stop-start-stop journey, to the
+          point where I took a
+          <em><q class="challenge">Year-of-Challenge</q></em> in 2022 to answer
+          the question:
         </p>
-    <p> Whilst at DevAcademy I have learnt a lot. I want to share some of my <a href="./blog/blogs-list-page.html" id="page-link-blogs"> projects</a>.
-    </p>
-  
-      </div>
+        <p>
+          <em>If I was not writing code, what would I be doing? </em>
+        </p>
+        <p>
+          The answer, is the reason I am attending Dev Academy. My journey is
+          <a href="#intro" id="blog-links" class="challenge"> shared</a> below.
+        </p>
+      </aside>
 
-      <!-- <section id="my-projects">
-<p> Whilst at DevAcademy I have learnt a lot. I want to share some of my <a href="#my-projects"> projects</a>.
-    </p>
-        <h3>Projects</h3>
-
-        <h4>Tech blogs entries</h4>
-        <article class="tech-blog">
-
+      <article id="intro" class="blog-content">
+        <article class="blog" id="tech-blog">
+          <h3>Tech</h3>
           <ul class="entries">
             <li>
-              <a href="./blog/html-css.html#css-concepts">CSS Concepts</a>
+              <a href="blog/html-css.html">CSS Concepts</a>
             </li>
             <li>
-              <a href="#">Tech blog 2</a>
+              <a href="blog/javascript-dom.html">JS Fundamentals</a>
             </li>
             <li>
-              <a href="#">Tech blog 3</a>
+              <a href="#">More Tech blogs</a>
             </li>
           </ul>
         </article>
-      
-        <h4>Core blogs entries</h4>
-        
-        <article class="core-article">
+        <article class="blog" id="core-blog">
+          <h3>Core</h3>
 
-        <ul class="entries">
-          <li>
-            <a href="./blog/identity-values.html">Identity, Values and Strengths</a>
+          <ul class="entries">
+            <li>
+              <a href="blog/identity-values.html"
+                >Identity Values &#38; Strengths</a
+              >
             </li>
-          <li>
-            <a href="#">Core 2</a>
-          </li>
-          <li>
-            <a href="#">Core 3</a>
-          </li>
-        </ul>
+            <li>
+              <a href="blog/learning-plan.html">Learning Plan</a>
+            </li>
+            <li>
+              <a href="blog/emotional-intelligence.html"
+                >Emotional Intelligence</a
+              >
+            </li>
+          </ul>
+        </article>
       </article>
-
-    </section> -->
-
     </main>
 
     <footer class="footer">
-      <p>Written by: Siza Zhanje</p>
-    <!--<address></address>-->
+      <p>Place holder for footer content to come</p>
+      <!--<address></address>-->
     </footer>
-
   </body>
-
-  
 </html>

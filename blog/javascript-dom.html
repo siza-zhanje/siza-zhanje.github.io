@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Fundamentals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My blog" />
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!--areas = welcome-->
+      <h1>JS Fundamentals</h1>
+    </header>
+
+    <nav class="nav">
+      <!--nav-->
+      <a id="home" href="/index.html">Home</a>
+      <a href="/index.html#intro">Blog</a>
+      <a id="te-houtaewa" href="./te-houtaewa-template.html" target="_blank"
+        >te-houtaewa</a
+      >
+    </nav>
+
+    <main class="main">
+      <aside class="topic-aside">
+        <h3>JS Fundamentals</h3>
+        <p>
+          JavasScript, HTML and CSS are the main languages used to make a
+          webpage. The browser uses these languages to display teh page on the
+          computer’s screen.
+        </p>
+      </aside>
+
+      <article id="js-fundamentals" class="blog-content">
+        <h3>JavaScript relationship to HTML and CSS</h3>
+
+        <div class="difference">
+          <p>
+            A light bulb in your hand is an analogy of HTML, Hyper Text Markup
+            Language in a web page. Each component, the cap connecting to the
+            ceiling or floor or lamp socket; the glass covering, the stem etc
+            are each given unique ID. However the filamament componets could be
+            given a class name.
+          </p>
+          <p>
+            CSS would add the location of connection; whether the bulb glass is
+            clear or coloured; the size using those IDs & classes. To switch the
+            light bulb ON or OFF, change the glass covering color, determine
+            brightness at various times when ON, direction of light provided
+            would be determined by JavaScript; setting these actions to the
+            specific components accessed by their ID or class.
+          </p>
+        </div>
+
+        <h3>Control flow and loops, arrays, and objects</h3>
+
+        <div class="difference">
+          <p>
+            When writing lines of code in a program, the order in which these
+            are read by the computer is described as Control Flow. Normally, the
+            computer reads the lines, also called statements, from
+            left-to-right; top-to-bottom.
+          </p>
+
+          <img
+            src="/images/control-flow.png"
+            alt="a screen shot showing the flow of control in making a cup of tea"
+            class="screen-shot"
+          />
+          <p>
+            Loops represent decisions within control flow. A loop is just that:
+            it has a starting point and and ending point. In between the start
+            and end points, the outcome of decisions made, determines the path
+            taken to reach the decision.
+          </p>
+        </div>
+
+        <h3>What is the DOM&#63;</h3>
+
+        <div class="difference">
+          <p>
+            Is a tree-like representation of all the objects that make up the
+            structure and content of a web page. Each element is refereed to as
+            a node and has only one parent. The DOM provides a way of
+            interconnecting with these elements.
+          </p>
+
+          <img
+            src="/images/DOM.png"
+            alt="a screen shot showing the tree-like structure of the DOM"
+            class="screen-shot"
+          />
+          <h4>How does it relate to CSS and HTML</h4>
+          <p>
+            By providing each HTML element with a unique ID, the DOM can be used
+            to modify HTML and CSS elements directly within the browser using
+            Google DevTools. CSS styles HTML elements using its class name;
+            JavaScript uses its ID and the DOM uses both to modify both.
+          </p>
+          <p>
+            Any changes made to the page inside the DOM are not permanent, being
+            lost when the webpage is refreshed. This is useful if we want to
+            test the effect of modifications to the page. Fortunately, if we
+            like those changes, we can still save them by mapping the source
+            files within the DOM back to the local folder.
+          </p>
+
+          <img
+            src="/images/DOM-within-DevTools.png"
+            alt="a screen shot showing the DOM of my blog homepage within DevTools"
+            class="screen-shot"
+          />
+        </div>
+
+        <h3>Difference between accessing data from arrays and objects</h3>
+
+        <div class="difference">
+          <p>
+            To get an item out of an array, the position of the item is used.
+          </p>
+
+          <img
+            src="/images/accessing-data-from-array.png"
+            alt="a screen shot showing how data is accessed from an object"
+            class="screen-shot"
+          />
+
+          <p>To get an item out of an object, the dot notation is used.</p>
+          <img
+            src="/images/dot-notation-object-example.png"
+            alt="a screen shot showing how data is accessed from an object"
+            class="screen-shot"
+          />
+
+          <img
+            src="/images/data-from-object.png"
+            alt="a screen shot showing how data accessed from an object is presented"
+            class="screen-shot"
+          />
+        </div>
+
+        <h3>Functions and why they are useful</h3>
+
+        <div class="difference">
+          <p>
+            Functions are blocks of instructions which the computer must execute
+            in the order that they are written, from top to bottom. They have a
+            signature which consists of a name, whether or not data needs to be
+            entered for the function to work and whether or not dat must be
+            given back after the instruction block has been completed.
+          </p>
+
+          <img
+            src="/images/why-functions-are-useful.png"
+            alt="a screen shot showing a function and how it can be helpful"
+            class="screen-shot"
+          />
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>Place holder for footer content to come</p>
+      <address></address>
+    </footer>
+  </body>
+</html>
