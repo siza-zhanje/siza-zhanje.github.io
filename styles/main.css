@@ -127,10 +127,22 @@
     padding: 20px;
   }
 
-  .challenge {
+  .challenge, .technique {
     color: darkorchid;
     font-weight: 900;
   }
+
+  .score {
+   border-top: 2px solid red;
+    border-radius: 50%;
+   background-color: darkorchid;
+    margin-left: auto;
+    margin-right: auto;
+   padding-left: 40%;
+    color:white;
+    
+ }  
+  
 }
 
 @media (min-width: 768px) {
@@ -155,6 +167,30 @@
     margin: 40px;
     max-height: auto;
   }
+
+  .score {
+    
+  border-radius: 10%;
+    }
+  
+  .techique {
+   border: 2px solid yellow;
+   background-color: dark-yellow;
+   margin: 2px;
+   padding: 5px;
+ }
+   .confidence.score {
+   border: 2px solid red;
+     background-color: dark-red;
+    margin: 2px;
+   padding: 5px;
+ }     
+   .confidence.my-feeling {   
+   border: 2px solid green;
+     background-color: light-green;
+    margin: 2px;
+   padding: 5px;
+ }
 }
 
 @media (min-width: 1200px) {
